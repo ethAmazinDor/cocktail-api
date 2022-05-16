@@ -9,7 +9,7 @@ searchBtn.addEventListener('click', getCocktailList) //event listener on searchB
 cocktailList.addEventListener('click', getCocktailIngredients)
 
 
-//get a cocktail list that matches with the ingredients 
+//get a cocktail list that matches with the ingredients/drinks
 function getCocktailList() {
     let searchInputTxt = document.getElementById('search-input').value.trim()
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
